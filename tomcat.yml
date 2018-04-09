@@ -6,9 +6,9 @@
         name: tomcat
         state: present
     - name: something
-        template:
-          src: default.template
-          dest: /tmp/default.conf
+      template:
+        src: default.template
+        dest: /tmp/default.conf
     - name: Ensure tomcat service is enabled and started
       service:
         name: tomcat
